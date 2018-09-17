@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct MatchConfig
+   | Fantasy Crescendo </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct MatchConfig
+   | Fantasy Crescendo ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig">
+  
+  
+  <h1 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig" class="text-break">Struct MatchConfig
+  </h1>
+  <div class="markdown level0 summary"><p>A data object for configuring a game between multiple players.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="HouraiTeahouse.FantasyCrescendo.IValidatable.html">IValidatable</a></div>
+    <div><span class="xref">INetworkSerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HouraiTeahouse.FantasyCrescendo.Matches.html">HouraiTeahouse.FantasyCrescendo.Matches</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct MatchConfig : IValidatable, INetworkSerializable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_PlayerConfigs" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.PlayerConfigs">PlayerConfigs</h4>
+  <div class="markdown level1 summary"><p>Individual configurations for each participating player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerConfig[] PlayerConfigs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HouraiTeahouse.FantasyCrescendo.PlayerConfig.html">PlayerConfig</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_PlayerConfigs_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that each player&apos;s player ID does not directly correspond with
+the array index for the player&apos;s config. All players in the game 
+with a valid configuration are assumed to be active. For example, 
+the player at index 1 may not be P2. Player 2 may be inactive and 
+the player may be P3 or P4 instead.</p>
+</div>
+  
+  
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_StageID" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.StageID">StageID</h4>
+  <div class="markdown level1 summary"><p>The ID of the stage that the match will be played on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint StageID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Stocks" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Stocks">Stocks</h4>
+  <div class="markdown level1 summary"><p>The number of stocks each player starts off with. If set to zero, the 
+match will not be a stock match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Stocks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Time" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Time">Time</h4>
+  <div class="markdown level1 summary"><p>The amount of time the match will last for in ticks. If zero the game
+will not have a time limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Time</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_IsLocal_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.IsLocal*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_IsLocal" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.IsLocal">IsLocal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_IsValid_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.IsValid*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_IsValid" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_PlayerCount_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.PlayerCount*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_PlayerCount" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.PlayerCount">PlayerCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of participating players in the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PlayerCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Deserialize_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Deserialize*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Deserialize_Deserializer_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Deserialize(Deserializer)">Deserialize(Deserializer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deserialize(Deserializer deserializer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Deserializer</span></td>
+        <td><span class="parametername">deserializer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Equals_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Equals*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Equals_System_Object_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_GetHashCode_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.GetHashCode*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_GetHashCode" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Serialize_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Serialize*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_Serialize_Serializer_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.Serialize(Serializer)">Serialize(Serializer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Serialize(Serializer serializer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Serializer</span></td>
+        <td><span class="parametername">serializer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_ToString_" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.ToString*"></a>
+  <h4 id="HouraiTeahouse_FantasyCrescendo_Matches_MatchConfig_ToString" data-uid="HouraiTeahouse.FantasyCrescendo.Matches.MatchConfig.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="HouraiTeahouse.FantasyCrescendo.IValidatable.html">IValidatable</a>
+  </div>
+  <div>
+      <span class="xref">INetworkSerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
